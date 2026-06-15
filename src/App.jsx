@@ -1,8 +1,9 @@
+import MainLayout from "./layouts/MainLayout";
 
 const App = () => {
   return (
     <>
-      <h1>NovaCart</h1>
+      <MainLayout />
     </>
   );
 }
