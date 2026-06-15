@@ -1,8 +1,13 @@
+import { navLinks } from "../../utils/navLinks";
+import Logo from "../../assets/images/logo.png";
+
 const NavBar = () => {
     return (
-        <>
-        <h1>NavBar</h1>
-        </>
+        <nav>
+            <div className="logo">
+                <img src={Logo} alt="novacart logo"/>
+            </div>
+        </nav>
     );
 }
 
