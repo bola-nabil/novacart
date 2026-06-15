@@ -25,7 +25,7 @@ export const navLinks = [
         path: "/about"
     },
     {
-        id: "5",
+        id: "6",
         title: "Contact",
         path: "/contact"
     }
