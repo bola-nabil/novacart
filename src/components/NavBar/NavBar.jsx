@@ -1,7 +1,8 @@
 import { centerNavLinks, rightNavLinks } from "../../utils/navLinks";
 import Logo from "../../assets/images/logo.png";
 import { Link, Outlet } from "react-router-dom";
-import SearchProducts from "../ui/SearchProducts";
+import SearchProducts from "../ui/SearchProducts/SearchProducts";
+import "./NavBar.css";
 
 const NavBar = () => {
     return (
@@ -22,7 +23,7 @@ const NavBar = () => {
                 <div className="right-side">
                     <SearchProducts />
 
-                    <div>
+                    <div className="links">
                         {
                             rightNavLinks.map((link) => (
                                 <Link key={link.id} to={link.path}>
