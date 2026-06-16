@@ -1,4 +1,5 @@
-export const navLinks = [
+
+export const centerNavLinks = [
     {
         id: 1,
         title: "Home",
