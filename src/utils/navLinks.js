@@ -1,3 +1,6 @@
+import ProfileIcon from "../assets/images/profile-icon.svg";
+import WishlistIcon from "../assets/images/wishlist-icon.svg";
+import CartIcon from "../assets/images/cart-icon.svg";
 
 export const centerNavLinks = [
     {
@@ -31,3 +34,21 @@ export const centerNavLinks = [
         path: "/contact"
     }
 ];
+
+export const rightNavLinks = [
+    {
+        id: 1,
+        image: ProfileIcon,
+        path: "/profile"
+    },
+    {
+        id: 2,
+        image: WishlistIcon,
+        path: "/wishlist"
+    },
+    {
+        id: 3,
+        image: CartIcon,
+        path: "/cart"
+    }
+]
