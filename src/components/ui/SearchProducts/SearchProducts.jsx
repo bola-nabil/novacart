@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./SearchProducts.css";
 
 const SearchProducts = () => {
     const [products, setProducts] = useState("");
