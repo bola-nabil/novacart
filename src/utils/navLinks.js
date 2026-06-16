@@ -39,16 +39,19 @@ export const rightNavLinks = [
     {
         id: 1,
         image: ProfileIcon,
+        description: "profile icon",
         path: "/profile"
     },
     {
         id: 2,
         image: WishlistIcon,
+        description: "wishlist icon",
         path: "/wishlist"
     },
     {
         id: 3,
         image: CartIcon,
+        description: "cart icon",
         path: "/cart"
     }
 ]
