@@ -1,6 +1,7 @@
 import { navLinks } from "../../utils/navLinks";
 import Logo from "../../assets/images/logo.png";
 import { Link, Outlet } from "react-router-dom";
+import SearchProducts from "../ui/SearchProducts";
 
 const NavBar = () => {
     return (
@@ -16,6 +17,10 @@ const NavBar = () => {
                             <Link key={link.id} to={link.path}>{link.title}</Link>
                         ))
                     }
+                </div>
+
+                <div className="right-side">
+                    <SearchProducts />
                 </div>
             </nav>
             
