@@ -6,6 +6,9 @@ import Categories from "../pages/Categories/Categories";
 import Deals from "../pages/Deals/Deals";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
+import Profile from "../pages/Profile/Profile";
+import WishList from "../pages/WishList/WishList";
+import Cart from "../pages/Cart/Cart";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +38,18 @@ const router = createBrowserRouter([
             {
                 "path": "/contact",
                 "element": <Contact />
+            },
+            {
+                "path": "/profile",
+                "element": <Profile />
+            },
+            {
+                "path": "/wishlist",
+                "element": <WishList />
+            },
+            {
+                "path": "/cart",
+                "element": <Cart />
             }
         ]
     }
