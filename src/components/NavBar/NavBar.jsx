@@ -1,4 +1,4 @@
-import { navLinks } from "../../utils/navLinks";
+import { centerNavLinks, rightNavLinks } from "../../utils/navLinks";
 import Logo from "../../assets/images/logo.png";
 import { Link, Outlet } from "react-router-dom";
 import SearchProducts from "../ui/SearchProducts";
@@ -13,7 +13,7 @@ const NavBar = () => {
 
                 <div className="center-side">
                     {
-                        navLinks.map((link) => (
+                        centerNavLinks.map((link) => (
                             <Link key={link.id} to={link.path}>{link.title}</Link>
                         ))
                     }
@@ -21,6 +21,16 @@ const NavBar = () => {
 
                 <div className="right-side">
                     <SearchProducts />
+
+                    <div>
+                        {
+                            rightNavLinks.map((link) => (
+                                <Link key={link.id} to={link.path}>
+                                    <img src={link.image} alt={link.description}/>
+                                </Link>
+                            ))
+                        }
+                    </div>
                 </div>
             </nav>
             
