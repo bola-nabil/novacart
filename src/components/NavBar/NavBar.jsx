@@ -1,6 +1,6 @@
 import { centerNavLinks, rightNavLinks } from "../../utils/navLinks";
 import Logo from "../../assets/images/logo.png";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet, Link } from "react-router-dom";
 import SearchProducts from "../ui/SearchProducts/SearchProducts";
 import "./NavBar.css";
 
@@ -15,7 +15,9 @@ const NavBar = () => {
                 <div className="center-side">
                     {
                         centerNavLinks.map((link) => (
-                            <Link key={link.id} to={link.path}>{link.title}</Link>
+                            <NavLink key={link.id} to={link.path}
+                            className={({isActive}) => isActive ? "active-link": ""}
+                            >{link.title}</NavLink>
                         ))
                     }
                 </div>
