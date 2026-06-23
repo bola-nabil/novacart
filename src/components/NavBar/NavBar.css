@@ -5,7 +5,7 @@
 }
 
 @media (min-width: 1024px) {
-    .menu-icon {
+    .menu-bar {
         display: none;
     }
 }
