@@ -10,6 +10,10 @@ const NavBar = () => {
     return (
         <>
             <nav className="sticky top-0 flex justify-between items-center w-full z-50 bg-white/90 shadow-[0_2px_10px_rgba(0,0,0,0.05)] h-20 px-5">
+
+                <div className="menu-icon">
+                    <FontAwesomeIcon icon={faBars} />
+                </div>
                 <div>
                     <img src={Logo} alt="novacart logo" className="w-auto h-[200pxS]"/>
                 </div>
