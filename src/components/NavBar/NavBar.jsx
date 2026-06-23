@@ -2,34 +2,33 @@ import { centerNavLinks, rightNavLinks } from "../../utils/navLinks";
 import Logo from "../../assets/images/logo.png";
 import { NavLink, Outlet, Link } from "react-router-dom";
 import SearchProducts from "../ui/SearchProducts/SearchProducts";
-import "./NavBar.css";
 
 const NavBar = () => {
     return (
         <>
-            <nav>
+            <nav className="sticky top-0 flex justify-between items-center w-full z-50 bg-white/90 shadow-[0_2px_10px_rgba(0,0,0,0.05)] h-20 px-5">
                 <div className="logo">
-                    <img src={Logo} alt="novacart logo"/>
+                    <img src={Logo} alt="novacart logo" className="w-auto h-[200pxS]"/>
                 </div>
 
                 <div className="center-side">
                     {
                         centerNavLinks.map((link) => (
                             <NavLink key={link.id} to={link.path}
-                            className={({isActive}) => isActive ? "active-link": ""}
+                            className={({isActive}) => `px-[15px] font-bold ${ isActive ? "active-link": ""}`}
                             >{link.title}</NavLink>
                         ))
                     }
                 </div>
 
-                <div className="right-side">
+                <div className="right-side flex items-center gap-4">
                     <SearchProducts />
 
-                    <div className="links">
+                    <div className="links flex gap-[15px]">
                         {
                             rightNavLinks.map((link) => (
                                 <Link key={link.id} to={link.path}>
-                                    <img src={link.image} alt={link.description}/>
+                                    <img src={link.image} alt={link.description} className="w-[25px] h-[25px]"/>
                                 </Link>
                             ))
                         }
