@@ -38,9 +38,10 @@ const NavBar = () => {
                     }
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="hidden lg:block">
                     <SearchProducts />
-
+                </div>
+                <div className="flex items-center gap-4">
                     <div className="flex gap-[15px]">
                         {
                             rightNavLinks.map((link) => (
@@ -72,6 +73,9 @@ const NavBar = () => {
         </div>
             )}
             
+             <div className="block lg:hidden px-5 pb-4">
+                <SearchProducts />
+            </div>
             <Outlet />
         </>
     );
