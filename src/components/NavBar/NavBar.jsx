@@ -7,11 +7,11 @@ const NavBar = () => {
     return (
         <>
             <nav className="sticky top-0 flex justify-between items-center w-full z-50 bg-white/90 shadow-[0_2px_10px_rgba(0,0,0,0.05)] h-20 px-5">
-                <div className="logo">
+                <div>
                     <img src={Logo} alt="novacart logo" className="w-auto h-[200pxS]"/>
                 </div>
 
-                <div className="center-side">
+                <div>
                     {
                         centerNavLinks.map((link) => (
                             <NavLink key={link.id} to={link.path}
@@ -21,10 +21,10 @@ const NavBar = () => {
                     }
                 </div>
 
-                <div className="right-side flex items-center gap-4">
+                <div className="flex items-center gap-4">
                     <SearchProducts />
 
-                    <div className="links flex gap-[15px]">
+                    <div className="flex gap-[15px]">
                         {
                             rightNavLinks.map((link) => (
                                 <Link key={link.id} to={link.path}>
