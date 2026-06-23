@@ -2,6 +2,7 @@ import { centerNavLinks, rightNavLinks } from "../../utils/navLinks";
 import Logo from "../../assets/images/logo.png";
 import { NavLink, Outlet, Link } from "react-router-dom";
 import SearchProducts from "../ui/SearchProducts/SearchProducts";
+import "./NavBar.css";
 
 const NavBar = () => {
     return (
@@ -11,7 +12,7 @@ const NavBar = () => {
                     <img src={Logo} alt="novacart logo" className="w-auto h-[200pxS]"/>
                 </div>
 
-                <div>
+                <div className="center-links">
                     {
                         centerNavLinks.map((link) => (
                             <NavLink key={link.id} to={link.path}
