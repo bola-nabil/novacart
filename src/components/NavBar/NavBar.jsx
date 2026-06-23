@@ -52,6 +52,25 @@ const NavBar = () => {
                     </div>
                 </div>
             </nav>
+
+            {show && (
+        <div className="sm:hidden flex flex-col bg-white shadow-md px-5 py-4">
+        {centerNavLinks.map((link) => (
+            <NavLink
+            key={link.id}
+            to={link.path}
+            onClick={() => setShow(false)}
+            className={({ isActive }) =>
+                `py-3 font-bold ${
+                isActive ? "text-blue-500" : ""
+                }`
+            }
+            >
+            {link.title}
+            </NavLink>
+        ))}
+        </div>
+            )}
             
             <Outlet />
         </>
