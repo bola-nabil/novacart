@@ -3,12 +3,15 @@
     height: 25px;
 }
 
+/* small screens */
 @media(max-width: 639px) {
     .center-links {
         display: none;
     }
 }
 
+
+/* large screens */
 @media (min-width: 1024px) {
     .menu-bar {
         display: none;
