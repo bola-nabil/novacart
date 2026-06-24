@@ -20,8 +20,8 @@ const NavBar = () => {
                 <div className="menu-bar" onClick={handleShow}>
                     {
                         (show) ? 
-                        <FontAwesomeIcon  icon={faXmark}/>
-                        : <FontAwesomeIcon icon={faBars}/>
+                        <FontAwesomeIcon  icon={faXmark} />
+                        : <FontAwesomeIcon icon={faBars} />
                     }
                 </div>
                 <div>
@@ -38,7 +38,7 @@ const NavBar = () => {
                     }
                 </div>
 
-                <div className="hidden lg:block">
+                <div className="hidden md:block lg:block">
                     <SearchProducts />
                 </div>
                 <div className="flex items-center gap-4">
@@ -73,7 +73,7 @@ const NavBar = () => {
         </div>
             )}
             
-             <div className="block lg:hidden px-5 pb-4">
+             <div className="block md:hidden lg:hidden px-5 pb-4">
                 <SearchProducts />
             </div>
             <Outlet />
