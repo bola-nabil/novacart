@@ -8,6 +8,9 @@
     .center-links {
         display: none;
     }
+    .medium-screens-links {
+        display: none;
+    }
 }
 
 /* medium screens */
@@ -21,6 +24,10 @@
 /* large screens */
 @media (min-width: 1024px) {
     .menu-bar {
+        display: none;
+    }
+
+    .medium-screens-links {
         display: none;
     }
 }
