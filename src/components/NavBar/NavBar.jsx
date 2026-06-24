@@ -28,7 +28,7 @@ const NavBar = () => {
                     <img src={Logo} alt="novacart logo" className="w-auto h-[200pxS]"/>
                 </div>
 
-                <div className="center-links md:hidden">
+                <div className="center-links md:hidden lg:block">
                     {
                         centerNavLinks.map((link) => (
                             <NavLink key={link.id} to={link.path}
@@ -72,6 +72,16 @@ const NavBar = () => {
         ))}
         </div>
             )}
+
+            <div className="medium-screens-links w-full flex items-center justify-center h-15 bg-white shadow-md">
+                  {
+                        centerNavLinks.map((link) => (
+                            <NavLink key={link.id} to={link.path}
+                            className={({isActive}) => `px-[15px] font-bold ${ isActive ? "active-link": ""}`}
+                            >{link.title}</NavLink>
+                        ))
+                    }
+            </div>
             
              <div className="block md:hidden lg:hidden px-5 pb-4">
                 <SearchProducts />
