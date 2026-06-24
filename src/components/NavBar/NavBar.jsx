@@ -28,7 +28,7 @@ const NavBar = () => {
                     <img src={Logo} alt="novacart logo" className="w-auto h-[200pxS]"/>
                 </div>
 
-                <div className="center-links">
+                <div className="center-links md:hidden">
                     {
                         centerNavLinks.map((link) => (
                             <NavLink key={link.id} to={link.path}
