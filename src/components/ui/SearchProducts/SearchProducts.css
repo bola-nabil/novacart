@@ -1,3 +1,11 @@
 .search-nav svg {
     height: 50px;
 }
+
+/* small screens */
+@media (max-width: 639px) {
+    .search-nav input {
+        background-color: white;
+        width: 100%;
+    }
+}
