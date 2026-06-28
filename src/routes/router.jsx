@@ -9,6 +9,7 @@ import Contact from "../pages/Contact/Contact";
 import Profile from "../pages/Profile/Profile";
 import WishList from "../pages/WishList/WishList";
 import Cart from "../pages/Cart/Cart";
+import NewArrivals from "../pages/new-arrivals/NewArrivals";
 
 const router = createBrowserRouter([
     {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
             {
                 "path": "/cart",
                 "element": <Cart />
+            },
+            {
+                "path": "/new-arrivals",
+                "element": <NewArrivals />
             }
         ]
     }
