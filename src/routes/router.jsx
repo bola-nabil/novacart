@@ -11,6 +11,7 @@ import WishList from "../pages/WishList/WishList";
 import Cart from "../pages/Cart/Cart";
 import NewArrivals from "../pages/new-arrivals/NewArrivals";
 import BestSellers from "../pages/best-sellers/BestSellers";
+import FAQ from "../pages/FAQ/FAQ";
 
 const router = createBrowserRouter([
     {
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
             {
                 "path": "/best-sellers",
                 "element": <BestSellers />
+            },
+            {
+                "path": "/faq",
+                "element": <FAQ />
             }
         ]
     }
