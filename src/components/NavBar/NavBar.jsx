@@ -32,7 +32,7 @@ const NavBar = () => {
                     {
                         centerNavLinks.map((link) => (
                             <NavLink key={link.id} to={link.path}
-                            className={({isActive}) => `px-[15px] font-bold ${ isActive ? "active-link": ""}`}
+                            className={({isActive}) => `px-[15px] font-bold ${ isActive ? "text-blue-500": ""}`}
                             >{link.title}</NavLink>
                         ))
                     }
@@ -77,7 +77,7 @@ const NavBar = () => {
                   {
                         centerNavLinks.map((link) => (
                             <NavLink key={link.id} to={link.path}
-                            className={({isActive}) => `px-[15px] font-bold ${ isActive ? "active-link": ""}`}
+                            className={({isActive}) => `px-[15px] font-bold ${ isActive ? "text-blue-500": ""}`}
                             >{link.title}</NavLink>
                         ))
                     }
