@@ -16,6 +16,8 @@ import ShippingPolicy from "../pages/shipping-policy/ShippingPolicy";
 import Returns from "../pages/Returns/Returns";
 import TrackOrder from "../pages/track-order/TrackOrder";
 import Careers from "../pages/Careers/Careers";
+import Policy from "../pages/Policy/Policy";
+import Blog from "../pages/Blog/Blog";
 
 const router = createBrowserRouter([
     {
@@ -85,6 +87,14 @@ const router = createBrowserRouter([
             {
                 "path": "/careers",
                 "element": <Careers />
+            },
+            {
+                "path": "/policy",
+                "element": <Policy />
+            },
+            {
+                "path": "/blog",
+                "element": <Blog />
             }
         ]
     }
