@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { centerNavLinks, rightNavLinks } from "../../utils/navLinks";
+import { rightNavLinks } from "../../utils/navLinks";
 import Logo from "../../assets/images/logo.png";
-import { NavLink, Outlet, Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import SearchProducts from "../ui/SearchProducts/SearchProducts";
 import { faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
