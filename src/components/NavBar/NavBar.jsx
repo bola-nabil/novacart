@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { rightNavLinks } from "../../utils/navLinks";
 import Logo from "../../assets/images/logo.png";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import CenterNavLinks from "./CenterNavLinks";
 import SearchProducts from "../ui/SearchProducts/SearchProducts";
 import { faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
@@ -64,7 +64,6 @@ const NavBar = () => {
              <div className="block md:hidden lg:hidden px-5 pb-4">
                 <SearchProducts />
             </div>
-            <Outlet />
         </>
     );
 }
