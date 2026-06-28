@@ -13,6 +13,7 @@ import NewArrivals from "../pages/new-arrivals/NewArrivals";
 import BestSellers from "../pages/best-sellers/BestSellers";
 import FAQ from "../pages/FAQ/FAQ";
 import ShippingPolicy from "../pages/shipping-policy/ShippingPolicy";
+import Returns from "../pages/Returns/Returns";
 
 const router = createBrowserRouter([
     {
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
             {
                 "path": "/shipping-poilcy",
                 "element": <ShippingPolicy />
+            },
+            {
+                "path": "/returns",
+                "element": <Returns />
             }
         ]
     }
