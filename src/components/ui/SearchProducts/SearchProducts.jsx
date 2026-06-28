@@ -7,7 +7,9 @@ const SearchProducts = () => {
     const [products, setProducts] = useState("");
     return (
         <div className="search-nav relative">
-            <FontAwesomeIcon icon={faMagnifyingGlass} className="absolute right-[10px]"/>
+            <div className="search-icon absolute right-[10px]">
+                <FontAwesomeIcon icon={faMagnifyingGlass} className=""/>
+            </div>
             <input 
                 type="text"
                 placeholder="Search products..."
