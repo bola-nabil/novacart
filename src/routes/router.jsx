@@ -14,6 +14,7 @@ import BestSellers from "../pages/best-sellers/BestSellers";
 import FAQ from "../pages/FAQ/FAQ";
 import ShippingPolicy from "../pages/shipping-policy/ShippingPolicy";
 import Returns from "../pages/Returns/Returns";
+import TrackOrder from "../pages/track-order/TrackOrder";
 
 const router = createBrowserRouter([
     {
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
             {
                 "path": "/returns",
                 "element": <Returns />
+            },
+            {
+                "path": "/track-order",
+                "element": <TrackOrder />
             }
         ]
     }
