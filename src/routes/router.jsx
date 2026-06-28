@@ -15,6 +15,7 @@ import FAQ from "../pages/FAQ/FAQ";
 import ShippingPolicy from "../pages/shipping-policy/ShippingPolicy";
 import Returns from "../pages/Returns/Returns";
 import TrackOrder from "../pages/track-order/TrackOrder";
+import Careers from "../pages/Careers/Careers";
 
 const router = createBrowserRouter([
     {
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
             {
                 "path": "/track-order",
                 "element": <TrackOrder />
+            },
+            {
+                "path": "/careers",
+                "element": <Careers />
             }
         ]
     }
