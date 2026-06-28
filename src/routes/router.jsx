@@ -12,6 +12,7 @@ import Cart from "../pages/Cart/Cart";
 import NewArrivals from "../pages/new-arrivals/NewArrivals";
 import BestSellers from "../pages/best-sellers/BestSellers";
 import FAQ from "../pages/FAQ/FAQ";
+import ShippingPolicy from "../pages/shipping-policy/ShippingPolicy";
 
 const router = createBrowserRouter([
     {
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
             {
                 "path": "/faq",
                 "element": <FAQ />
+            },
+            {
+                "path": "/shipping-poilcy",
+                "element": <ShippingPolicy />
             }
         ]
     }
