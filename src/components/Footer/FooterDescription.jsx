@@ -8,8 +8,11 @@ import {
 
 const FooterDescription = () => {
     return (
-        <>
-        </>
+       <div>
+            <div>
+                <img src={Logo} alt="logo"/>
+            </div>
+       </div>
     );
 }
 
