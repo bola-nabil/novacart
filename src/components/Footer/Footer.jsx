@@ -2,6 +2,7 @@ import FooterDescription from "./FooterDescription";
 import FooterPages from "./FooterPages";
 import { shopLinks, customerServiceLinks, companyLinks } from "../../utils/footerLinks";
 import FooterContact from "./FooterContact";
+import FooterPayment from "./FooterPayment";
 
 const Footer = () => {
     return (
@@ -18,7 +19,7 @@ const Footer = () => {
                 <FooterContact />
             </div>
             <div>
-
+                <FooterPayment />
             </div>
         </footer>
     );
