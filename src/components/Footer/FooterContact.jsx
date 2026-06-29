@@ -1,4 +1,6 @@
 import { useState } from "react";
+import {faPaperPlane} from "../../utils/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const FooterContact = () => {
     const [email, setEmail] = useState("");
@@ -21,6 +23,9 @@ const FooterContact = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
+                <div>
+                    <FontAwesomeIcon icon={faPaperPlane} />
+                </div>
             </div>
         </section>
     );
