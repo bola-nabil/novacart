@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 const FooterContact = () => {
+    const [email, setEmail] = useState("");
     return (
         <section>
             <h1>Newsletter</h1>
@@ -9,6 +12,15 @@ const FooterContact = () => {
                     free giveaways, and once-in-a-lifetime
                     deals.
                 </p>
+            </div>
+
+            <div>
+                <input 
+                    type="email"
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                />
             </div>
         </section>
     );
