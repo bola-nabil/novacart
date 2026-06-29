@@ -2,7 +2,12 @@ import {
     faFacebookF, 
     faXTwitter,
     faInstagram,
-    faYoutube
+    faYoutube,
+    faCcVisa,
+    faCcMastercard,
+    faCcPaypal,
+    faCcApplePay,
+    faGoogleDrive
 } 
 from "@fortawesome/free-brands-svg-icons";
 
@@ -16,5 +21,10 @@ export {
     faInstagram,
     faYoutube,
     faPaperPlane,
+    faCcVisa,
+    faCcMastercard,
+    faCcPaypal,
+    faCcApplePay,
+    faGoogleDrive,
     Logo
 }
