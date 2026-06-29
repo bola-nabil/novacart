@@ -1,3 +1,5 @@
+import {faFacebookF, faInstagram, faXTwitter, faYoutube} from "./icons.js";
+
 export const shopLinks = [
     {
         "id": 1,
@@ -81,3 +83,26 @@ export const companyLinks = [
         "path": "/blog"
     }
 ]
+
+export const socialLinks = [
+    {
+        "id": 1,
+        "icon": faFacebookF,
+        "path": "https://www.facebook.com/"
+    },
+    {
+        "id": 2,
+        "icon": faInstagram,
+        "path": "https://www.instagram.com/?hl=en"
+    },
+    {
+        "id": 3,
+        "icon": faXTwitter,
+        "path": "https://x.com/"
+    },
+    {
+        "id": 4,
+        "icon": faYoutube,
+        "path": "https://www.youtube.com/"
+    },
+];
