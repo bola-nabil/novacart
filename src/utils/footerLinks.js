@@ -53,3 +53,31 @@ export const customerServiceLinks = [
         "path": "/track-order"
     }
 ];
+
+export const companyLinks = [
+    {
+        "id": 1,
+        "title": "About Us",
+        "path": "/about"
+    },
+    {
+        "id": 2,
+        "title": "Careers",
+        "path": "/careers"
+    },
+    {
+        "id": 3,
+        "title": "Privacy Policy",
+        "path": "/policy"
+    },
+    {
+        "id": 4,
+        "title": "Terms & Conditions",
+        "path": "/policy"
+    },
+    {
+        "id": 5,
+        "title": "Blog",
+        "path": "/blog"
+    }
+]
