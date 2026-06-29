@@ -7,7 +7,7 @@ import {
     faCcMastercard,
     faCcPaypal,
     faCcApplePay,
-    faGoogleDrive
+    faGooglePay
 } 
 from "@fortawesome/free-brands-svg-icons";
 
@@ -25,6 +25,6 @@ export {
     faCcMastercard,
     faCcPaypal,
     faCcApplePay,
-    faGoogleDrive,
+    faGooglePay,
     Logo
 }
