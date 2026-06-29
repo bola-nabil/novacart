@@ -1,5 +1,7 @@
 import { Logo } from "../../utils/icons";
 import { socialLinks } from "../../utils/footerLinks";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const FooterDescription = () => {
     return (
@@ -16,7 +18,15 @@ const FooterDescription = () => {
                 </p>
             </div>
 
-
+            <div>
+                {
+                    socialLinks.map((social) => (
+                        <Link key={social.id} to={social.path}>
+                            <FontAwesomeIcon icon={social.icon} />
+                        </Link>
+                    ))
+                }
+            </div>
        </div>
     );
 }
