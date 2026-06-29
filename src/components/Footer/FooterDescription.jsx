@@ -1,10 +1,5 @@
-import { 
-    Logo, 
-    faFacebookF,
-    faInstagram,
-    faXTwitter,
-    faYoutube
-} from "../../utils/icons";
+import { Logo } from "../../utils/icons";
+import { socialLinks } from "../../utils/footerLinks";
 
 const FooterDescription = () => {
     return (
@@ -21,7 +16,7 @@ const FooterDescription = () => {
                 </p>
             </div>
 
-            
+
        </div>
     );
 }
