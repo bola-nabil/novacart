@@ -25,3 +25,31 @@ export const shopLinks = [
         "path": "/best-sellers"
     }
 ];
+
+export const customerServiceLinks = [
+    {
+        "id": 1,
+        "title": "Contact Us",
+        "path": "/contact"
+    },
+    {
+        "id": 2,
+        "title": "FAQ",
+        "path": "/faq"
+    },
+    {
+        "id": 3,
+        "title": "Shipping Policy",
+        "path": "/shipping-poilcy"
+    },
+    {
+        "id": 4,
+        "title": "Returns & Refunds",
+        "path": "/returns"
+    },
+    {
+        "id": 5,
+        "title": "Track Order",
+        "path": "/track-order"
+    }
+];
