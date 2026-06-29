@@ -116,3 +116,31 @@ export const socialLinks = [
         "path": "https://www.youtube.com/"
     },
 ];
+
+export const paymentLinks = [
+    {
+        "id": 1,
+        "icon": faCcVisa,
+        "path": "/payment"
+    },
+    {
+        "id": 2,
+        "icon": faCcMastercard,
+        "path": "/payment"
+    },
+    {
+        "id": 3,
+        "icon": faCcPaypal,
+        "path": "/payment"
+    },
+    {
+        "id": 4,
+        "icon": faCcApplePay,
+        "path": "/payment"
+    },
+    {
+        "id": 5,
+        "icon": faGooglePay,
+        "path": "/payment"
+    },
+]
