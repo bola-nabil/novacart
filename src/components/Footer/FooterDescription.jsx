@@ -21,7 +21,7 @@ const FooterDescription = () => {
             <div>
                 {
                     socialLinks.map((social) => (
-                        <Link key={social.id} to={social.path}>
+                        <Link key={social.id} to={social.path} target="_blank">
                             <FontAwesomeIcon icon={social.icon} />
                         </Link>
                     ))
