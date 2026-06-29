@@ -14,7 +14,7 @@ export const shopLinks = [
     {
         "id": 1,
         "title": "All Products",
-        "path": "/prodcuts"
+        "path": "/products"
     },
     {
         "id": 2,
