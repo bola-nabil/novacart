@@ -1,6 +1,7 @@
 import FooterDescription from "./FooterDescription";
 import FooterPages from "./FooterPages";
 import { shopLinks, customerServiceLinks, companyLinks } from "../../utils/footerLinks";
+import FooterContact from "./FooterContact";
 
 const Footer = () => {
     return (
@@ -14,6 +15,7 @@ const Footer = () => {
                     <FooterPages pageTitle="Company" pages={companyLinks} />
                 </div>
 
+                <FooterContact />
             </div>
             <div>
 
