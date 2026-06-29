@@ -19,6 +19,7 @@ import TrackOrder from "../pages/track-order/TrackOrder";
 import Careers from "../pages/Careers/Careers";
 import Policy from "../pages/Policy/Policy";
 import Blog from "../pages/Blog/Blog";
+import Payment from "../pages/Payment/Payment";
 
 const router = createBrowserRouter([
     {
@@ -100,6 +101,10 @@ const router = createBrowserRouter([
             {
                 "path": "/blog",
                 "element": <Blog />
+            },
+            {
+                "path": "/payment",
+                "element": <Payment />
             }
         ]
     }
