@@ -1,4 +1,14 @@
-import {faFacebookF, faInstagram, faXTwitter, faYoutube} from "./icons.js";
+import {
+    faFacebookF,
+    faInstagram, 
+    faXTwitter,
+    faYoutube,
+    faCcVisa,
+    faCcMastercard,
+    faCcPaypal,
+    faCcApplePay,
+    faGooglePay
+} from "./icons.js";
 
 export const shopLinks = [
     {
