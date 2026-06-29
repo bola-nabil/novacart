@@ -3,6 +3,7 @@ import FooterPages from "./FooterPages";
 import { shopLinks, customerServiceLinks, companyLinks } from "../../utils/footerLinks";
 import FooterContact from "./FooterContact";
 import FooterPayment from "./FooterPayment";
+import "./footer.css";
 
 const Footer = () => {
     return (
