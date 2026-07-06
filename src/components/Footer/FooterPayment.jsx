@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const FooterPayment = () => {
     return (
-        <section>
+        <section className="flex justify-around items-center">
             <div>
                  <p>&copy; {currentYear()} Bola Nabil - All rights reserved.</p>
             </div>
