@@ -10,14 +10,12 @@ const Footer = () => {
     return (
         <footer>
            <Container>
-                <div>
+                <div className="footer-content grid grid-cols-5 gap-4">
                     <FooterDescription />
 
-                    <div>
                         <FooterPages pageTitle="Shop" pages={shopLinks} />
                         <FooterPages pageTitle="Customer Service" pages={customerServiceLinks} />
                         <FooterPages pageTitle="Company" pages={companyLinks} />
-                    </div>
 
                     <FooterContact />
                 </div>
