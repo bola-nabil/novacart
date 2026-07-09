@@ -6,9 +6,9 @@ const FooterContact = () => {
     const [email, setEmail] = useState("");
     return (
         <section>
-            <h1>Newsletter</h1>
+            <h1 className="text-xl font-bold">Newsletter</h1>
 
-            <div>
+            <div className="py-5">
                 <p>
                     Subscribe to get special offers,
                     free giveaways, and once-in-a-lifetime
