@@ -7,7 +7,7 @@ const FooterDescription = () => {
     return (
        <div>
             <div>
-                <img src={FooterLogo} alt="logo" className="h-[50px] w-auto"/>
+                <img src={FooterLogo} alt="logo" className="h-[50px] md:h-[30px] w-auto"/>
             </div>
 
             <div>
