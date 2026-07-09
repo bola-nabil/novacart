@@ -5,17 +5,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const FooterPayment = () => {
     return (
-        <section className="flex justify-around items-center">
+        <section className="flex justify-around items-center pt-10">
             <div>
                  <p>&copy; {currentYear()} Bola Nabil - All rights reserved.</p>
             </div>
 
-            <div>
+            <div className="flex gap-2">
                 {
                     paymentLinks.map((payment) => (
-                        <Link key={payment.id} to={payment.path}>
-                            <FontAwesomeIcon icon={payment.icon} />
-                        </Link>
+                        <div className="">
+                            <Link key={payment.id} to={payment.path}>
+                                <FontAwesomeIcon icon={payment.icon} size="2x"/>
+                            </Link>
+                        </div>
                     ))
                 }
             </div>
