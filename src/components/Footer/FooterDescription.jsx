@@ -11,7 +11,7 @@ const FooterDescription = () => {
             </div>
 
             <div>
-                <p>
+                <p className="py-5">
                     Your one-stop Shop for the best products
                     at unbeatable prices. Qualiy you can trust,
                     every day.
