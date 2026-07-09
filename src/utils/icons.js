@@ -14,6 +14,7 @@ from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 import Logo from "../assets/images/logo.png";
+import FooterLogo from "../assets/images/footer-logo.png";
 
 export {
     faFacebookF,
@@ -26,5 +27,6 @@ export {
     faCcPaypal,
     faCcApplePay,
     faGooglePay,
-    Logo
+    Logo,
+    FooterLogo
 }
