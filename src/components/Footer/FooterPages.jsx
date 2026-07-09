@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const FooterPages = ({pageTitle, pages}) => {
     return (
         <section>
-            <h1 className="text-xl font-bold">{pageTitle}</h1>
+            <h1 className="text-xl md:text-lg font-bold">{pageTitle}</h1>
 
             <div className="footer-pages py-4 flex flex-col gap-2">
                 {
