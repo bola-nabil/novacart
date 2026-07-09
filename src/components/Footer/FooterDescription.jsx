@@ -1,4 +1,4 @@
-import { Logo } from "../../utils/icons";
+import { FooterLogo } from "../../utils/icons";
 import { socialLinks } from "../../utils/footerLinks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
@@ -7,7 +7,7 @@ const FooterDescription = () => {
     return (
        <div>
             <div>
-                <img src={Logo} alt="logo"/>
+                <img src={FooterLogo} alt="logo" className="h-[50px] w-auto"/>
             </div>
 
             <div>
