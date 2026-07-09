@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 const FooterPages = ({pageTitle, pages}) => {
     return (
         <section>
-            <h1 className="text-xl md:text-lg font-bold">{pageTitle}</h1>
+            <h1 className="text-xl md:text-lg font-bold pb-5">{pageTitle}</h1>
 
-            <div className="footer-pages py-4 flex flex-col gap-2">
+            <div className="flex flex-col gap-4">
                 {
                     pages.map((page) => (
-                        <Link key={page.id} to={page.path}>
+                        <Link key={page.id} to={page.path} className="text-lg md:text-sm">
                             {page.title}
                         </Link>
                     ))
