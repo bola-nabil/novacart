@@ -18,12 +18,14 @@ const FooterDescription = () => {
                 </p>
             </div>
 
-            <div>
+            <div className="flex gap-2">
                 {
                     socialLinks.map((social) => (
-                        <Link key={social.id} to={social.path} target="_blank">
-                            <FontAwesomeIcon icon={social.icon} />
-                        </Link>
+                        <div className="flex items-center justify-center bg-white w-[35px] h-[35px] rounded-full">
+                            <Link key={social.id} to={social.path} target="_blank">
+                                <FontAwesomeIcon icon={social.icon} className="text-[#898e96]"/>
+                            </Link>
+                        </div>
                     ))
                 }
             </div>
