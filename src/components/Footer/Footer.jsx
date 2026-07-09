@@ -8,9 +8,9 @@ import "./footer.css";
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="bg-gray-100 py-10">
            <Container>
-                <div className="footer-content grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-5 gap-4">
                     <FooterDescription />
 
                         <FooterPages pageTitle="Shop" pages={shopLinks} />
