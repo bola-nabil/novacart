@@ -18,7 +18,7 @@ const FooterDescription = () => {
                 </p>
             </div>
 
-            <div className="flex gap-2">
+            <div className="flex gap-2 justify-center sm:justify-start pt-5 sm:pt-0">
                 {
                     socialLinks.map((social) => (
                         <div className="flex items-center justify-center bg-white w-[35px] h-[35px] rounded-full">
