@@ -11,7 +11,7 @@ const FooterDescription = () => {
             </div>
 
             <div>
-                <p className="py-5">
+                <p className="py-5 hidden sm:block">
                     Your one-stop Shop for the best products
                     at unbeatable prices. Qualiy you can trust,
                     every day.
