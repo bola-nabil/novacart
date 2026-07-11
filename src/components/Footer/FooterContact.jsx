@@ -16,7 +16,7 @@ const FooterContact = () => {
                 </p>
             </div>
 
-            <div className="lg:flex md:block">
+            <div className="flex sm:block lg:flex pt-3 sm:pt-0">
                 <input 
                     type="email"
                     name="email"
