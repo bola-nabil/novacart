@@ -5,16 +5,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const FooterPages = ({pageTitle, pages}) => {
     const [show, setShow] = useState(false);
-
-    const handleShow = () => {
-        setShow(!show);
-    }
     return (
         <section>
 
             <div className="flex justify-between">
                 <h1 className="text-xl md:text-lg font-bold pb-0 sm:pb-5">{pageTitle}</h1>
-                <div className="block sm:hidden" onClick={handleShow}>
+                <div className="block sm:hidden" onClick={() => setShow(prev => !prev)}>
                     {
                         show? (<FontAwesomeIcon icon={faChevronUp} />)
                         : 
@@ -22,15 +18,16 @@ const FooterPages = ({pageTitle, pages}) => {
                     }
                 </div>
             </div>
-
-            <div className="flex flex-col gap-4">
-                {
-                    pages.map((page) => (
-                        <Link key={page.id} to={page.path} className="footer-pages text-lg md:text-sm">
-                            {page.title}
-                        </Link>
-                    ))
-                }
+            <div className={`${show ? "flex" : "hidden"} sm:flex flex flex-col gap-4 pt-5 sm:pt-0`}>
+                {pages.map((page) => (
+                    <Link
+                        key={page.id}
+                        to={page.path}
+                        className="text-lg md:text-sm"
+                    >
+                        {page.title}
+                    </Link>
+                ))}
             </div>
         </section>
     );
