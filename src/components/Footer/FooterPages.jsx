@@ -1,9 +1,17 @@
 import { Link } from "react-router-dom";
+import { faChevronDown } from "../../utils/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const FooterPages = ({pageTitle, pages}) => {
     return (
         <section>
-            <h1 className="text-xl md:text-lg font-bold pb-5">{pageTitle}</h1>
+
+            <div>
+                <h1 className="text-xl md:text-lg font-bold pb-5">{pageTitle}</h1>
+                <div className="block sm:hidden">
+                    <FontAwesomeIcon icon={faChevronDown} />
+                </div>
+            </div>
 
             <div className="flex flex-col gap-4">
                 {
