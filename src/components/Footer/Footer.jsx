@@ -4,13 +4,12 @@ import { shopLinks, customerServiceLinks, companyLinks } from "../../utils/foote
 import FooterContact from "./FooterContact";
 import FooterPayment from "./FooterPayment";
 import Container from "../ui/Container";
-import "./footer.css";
 
 const Footer = () => {
     return (
         <footer className="bg-gray-100 py-10">
            <Container>
-                <div className="grid grid-cols-5 gap-5">
+                <div className="flex flex-col sm:grid sm:grid-cols-5 gap-5">
                     <FooterDescription />
 
                         <FooterPages pageTitle="Shop" pages={shopLinks} />
