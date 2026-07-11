@@ -1,0 +1,6 @@
+/* small screens */
+@media (max-width: 639px) {
+    .footer-pages {
+        display: none;
+    }
+}
