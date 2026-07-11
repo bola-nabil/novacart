@@ -7,11 +7,11 @@ import {
     faCcMastercard,
     faCcPaypal,
     faCcApplePay,
-    faGooglePay
+    faGooglePay,
 } 
 from "@fortawesome/free-brands-svg-icons";
 
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faPaperPlane, faChevronDown} from "@fortawesome/free-solid-svg-icons";
 
 import Logo from "../assets/images/logo.png";
 import FooterLogo from "../assets/images/footer-logo.png";
@@ -28,5 +28,6 @@ export {
     faCcApplePay,
     faGooglePay,
     Logo,
-    FooterLogo
+    FooterLogo,
+    faChevronDown
 }
