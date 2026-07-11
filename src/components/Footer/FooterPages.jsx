@@ -1,13 +1,19 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { faChevronDown } from "../../utils/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const FooterPages = ({pageTitle, pages}) => {
+    const [show, setShow] = useState(false);
+
+    const handleShow = () => {
+        setShow(!show);
+    }
     return (
         <section>
 
-            <div>
-                <h1 className="text-xl md:text-lg font-bold pb-5">{pageTitle}</h1>
+            <div className="flex justify-between">
+                <h1 className="text-xl md:text-lg font-bold pb-0 sm:pb-5">{pageTitle}</h1>
                 <div className="block sm:hidden">
                     <FontAwesomeIcon icon={faChevronDown} />
                 </div>
