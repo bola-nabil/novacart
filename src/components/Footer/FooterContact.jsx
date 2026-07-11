@@ -8,7 +8,7 @@ const FooterContact = () => {
         <section>
             <h1 className="text-xl md:text-lg font-bold">Newsletter</h1>
 
-            <div className="py-5">
+            <div className="py-5 hidden sm:block">
                 <p>
                     Subscribe to get special offers,
                     free giveaways, and once-in-a-lifetime
