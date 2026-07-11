@@ -8,7 +8,7 @@ const FooterPages = ({pageTitle, pages}) => {
             <div className="flex flex-col gap-4">
                 {
                     pages.map((page) => (
-                        <Link key={page.id} to={page.path} className="text-lg md:text-sm">
+                        <Link key={page.id} to={page.path} className="footer-pages text-lg md:text-sm">
                             {page.title}
                         </Link>
                     ))
