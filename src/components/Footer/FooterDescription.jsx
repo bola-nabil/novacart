@@ -21,8 +21,8 @@ const FooterDescription = () => {
             <div className="flex gap-2 justify-center sm:justify-start pt-5 sm:pt-0">
                 {
                     socialLinks.map((social) => (
-                        <div className="flex items-center justify-center bg-white w-[35px] h-[35px] rounded-full">
-                            <Link key={social.id} to={social.path} target="_blank">
+                        <div key={social.id} className="flex items-center justify-center bg-white w-[35px] h-[35px] rounded-full">
+                            <Link to={social.path} target="_blank" aria-label={`Go to ${social.title}`}>
                                 <FontAwesomeIcon icon={social.icon} className="text-[#898e96]"/>
                             </Link>
                         </div>

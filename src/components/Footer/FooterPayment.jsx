@@ -13,11 +13,13 @@ const FooterPayment = () => {
             <div className="flex gap-2">
                 {
                     paymentLinks.map((payment) => (
-                        <div className="">
-                            <Link key={payment.id} to={payment.path}>
+                            <Link
+                                 key={payment.id} 
+                                 to={payment.path}
+                                 aria-label="Go to payment page"
+                                 >
                                 <FontAwesomeIcon icon={payment.icon} size="2x"/>
                             </Link>
-                        </div>
                     ))
                 }
             </div>
