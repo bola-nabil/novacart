@@ -98,21 +98,25 @@ export const socialLinks = [
     {
         "id": 1,
         "icon": faFacebookF,
+        "title": "facebook",
         "path": "https://www.facebook.com/"
     },
     {
         "id": 2,
         "icon": faInstagram,
+        "title": "instagram",
         "path": "https://www.instagram.com/?hl=en"
     },
     {
         "id": 3,
         "icon": faXTwitter,
+        "title": "x",
         "path": "https://x.com/"
     },
     {
         "id": 4,
         "icon": faYoutube,
+        "title": "youtube",
         "path": "https://www.youtube.com/"
     },
 ];
