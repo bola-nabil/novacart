@@ -10,8 +10,8 @@ const Hero = () => {
                 <div className="flex items-center h-screen">
                     <div>
                         <p className="text-blue-700 font-bold text-xl">Summer collection {currentYear()}</p>
-                        <h1 className="text-6xl font-bold py-4">Find everything you need</h1>
-                        <p className="">
+                        <h1 className="text-xl md:text-4xl lg:text-6xl font-bold py-4">Find everything you need</h1>
+                        <p>
                             Discover premium products at unbeatable prices.
                             <br />
                             Quality you can trust, every day.
