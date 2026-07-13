@@ -1,0 +1,17 @@
+@media(max-width: 639px) {
+    .hero-section {
+        height: calc(100vh - 146px )
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    .hero-section {
+        height: calc(100vh - 120px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-section {
+        height: calc(100vh - 80px);
+    }
+}
