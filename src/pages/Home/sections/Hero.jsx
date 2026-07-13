@@ -22,9 +22,9 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    <div>
-                        <div>
-                            <img src={HeroImage} alt="hero product"/>
+                    <div className="bg-[#e2ecfb] w-[600px] h-[600px] rounded-full flex items-center justify-center overflow-hidden">
+                        <div className="">
+                            <img src={HeroImage} alt="hero product" className="w-[350px] h-auto object-contai"/>
                         </div>
                     </div>
                 </div>
