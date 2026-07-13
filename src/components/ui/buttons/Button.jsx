@@ -5,8 +5,8 @@ const Button = ({title, path, color="blue"}) => {
         <div 
         className={`
             ${color === "blue" ? 
-                "bg-blue-700 hover:bg-white text-white hover:text-blue-700" :
-                 "bg-white hover:bg-blue-700 text-blue-700 hover:text-white"
+                "bg-blue-700 hover:bg-white text-white hover:text-black" :
+                 "bg-white hover:bg-blue-700 text-black hover:text-white"
         }
         w-fit 
         rounded-md 
