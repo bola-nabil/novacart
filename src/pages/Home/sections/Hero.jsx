@@ -5,17 +5,18 @@ import HeroImage from "../../../assets/images/hero-image.png";
 
 const Hero = () => {
     return (
-        <section className="bg-blue-100 h-screen w-screen">
+        <section className="bg-[#f5f7fd] h-screen w-screen">
             <Container>
-                <div>
+                <div className="flex items-center h-screen">
                     <div>
-                        <p>Summer collection {currentYear()}</p>
-                        <h1>Find everything you need</h1>
-                        <p>
+                        <p className="text-blue-700 font-bold text-xl">Summer collection {currentYear()}</p>
+                        <h1 className="text-6xl font-bold py-4">Find everything you need</h1>
+                        <p className="">
                             Discover premium products at unbeatable prices.
+                            <br />
                             Quality you can trust, every day.
                         </p>
-                        <div>
+                        <div className="flex gap-4 py-5">
                             <Button title="Shop Now" path="/shop" />
                             <Button title="Explore Deals" path="/deals" color="white" />
                         </div>
