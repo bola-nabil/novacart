@@ -11,7 +11,16 @@ import {
 } 
 from "@fortawesome/free-brands-svg-icons";
 
-import { faPaperPlane, faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { 
+    faPaperPlane,
+    faChevronDown, 
+    faChevronUp, 
+    faTruck,
+    faShield,
+    faArrowsRotate,
+    faHeadset
+} 
+from "@fortawesome/free-solid-svg-icons";
 
 import Logo from "../assets/images/logo.png";
 import FooterLogo from "../assets/images/footer-logo.png";
