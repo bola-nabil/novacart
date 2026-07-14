@@ -7,9 +7,9 @@ import "./assets/styles/globals.css";
 import router from './routes/router.jsx';
 
 createRoot(document.getElementById('root')).render(
-  <QueryClientProvider client={queryClient}>
-    <StrictMode>
-      <RouterProvider router={router}/>
-    </StrictMode>,
-  </QueryClientProvider>
+      <StrictMode>
+          <QueryClientProvider client={queryClient}>
+            <RouterProvider router={router}/>
+        </QueryClientProvider>
+    </StrictMode>
 )
