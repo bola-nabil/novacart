@@ -20,6 +20,7 @@ import Careers from "../pages/Careers/Careers";
 import Policy from "../pages/Policy/Policy";
 import Blog from "../pages/Blog/Blog";
 import Payment from "../pages/Payment/Payment";
+import CategoryProducts from "../pages/Category-Products/CategoryProducts";
 
 const router = createBrowserRouter([
     {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
             {
                 "path": "/categories",
                 "element": <Categories />
+            },
+            {
+                "path": "/products/category/:slug",
+                "element": <CategoryProducts />
             },
             {
                 "path": "/deals",
