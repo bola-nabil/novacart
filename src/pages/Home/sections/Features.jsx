@@ -30,16 +30,19 @@ const featurseContent = [
 
 const Features = () => {
     return(
-        <section>
+        <section className="flex flex-col sm:flex-row items-center justify-center gap-10 p-10 w-full">
             {
                 featurseContent.map((feature) => (
-                    <div key={feature.id}>
+                    <div key={feature.id} className="flex items-center gap-4">
                         <div>
-                            <FontAwesomeIcon icon={feature.icon} />
+                            <FontAwesomeIcon 
+                                icon={feature.icon} 
+                                className="text-blue-700 text-2xl sm:text-3xl" 
+                                />
                         </div>
                         <div>
-                            <h1>{feature.header}</h1>
-                            <p>{feature.description}</p>
+                            <h1 className="font-bold ">{feature.header}</h1>
+                            <p className="text-md">{feature.description}</p>
                         </div>
                     </div>
                 ))
