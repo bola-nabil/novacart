@@ -10,7 +10,7 @@ const Hero = () => {
                 <div className="flex flex-col-reverse sm:flex-row items-center justify-center sm:justify-center gap-10 sm:gap-0 hero-section">
                     <div>
                         <p className="text-blue-700 font-bold text-xl">Summer collection {currentYear()}</p>
-                        <h1 className="text-xl md:text-4xl lg:text-6xl font-bold py-4">Find everything you need</h1>
+                        <h1 className="text-xl md:text-4xl lg:text-6xl font-bold py-4 capitalize">Find everything you need</h1>
                         <p>
                             Discover premium products at unbeatable prices.
                             <br />
