@@ -1,4 +1,5 @@
 import { useCategories } from "../../../hooks/useCategories";
+import Container from "../../../components/ui/Container";
 
 const Categories = () => {
     const { data, isLoading, error } = useCategories();
@@ -6,10 +7,14 @@ const Categories = () => {
     if(isLoading) return <p>Loading...</p>
     if (error) return <p>Something went wrong.</p>;
 
-    console.log(data);
     return (
         <section>
-            <h1>Categories</h1>
+            <Container>
+                <div className="flex justify-between">
+                    <h1 className="text-md sm:text-xl font-bold">Shop by Category</h1>
+                    <p className="text-blue-700">View All</p>
+                </div>
+            </Container>
         </section>
     );
 }
