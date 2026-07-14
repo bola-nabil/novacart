@@ -39,5 +39,9 @@ export {
     Logo,
     FooterLogo,
     faChevronDown,
-    faChevronUp
+    faChevronUp,
+    faTruck,
+    faShield,
+    faArrowsRotate,
+    faHeadset
 }
