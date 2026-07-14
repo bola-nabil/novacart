@@ -1,4 +1,5 @@
 import { faTruck, faShield, faArrowsRotate, faHeadset } from "../../../utils/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const featurseContent = [
     {
@@ -30,7 +31,19 @@ const featurseContent = [
 const Features = () => {
     return(
         <section>
-            <h1>Features</h1>
+            {
+                featurseContent.map((feature) => (
+                    <div key={feature.id}>
+                        <div>
+                            <FontAwesomeIcon icon={feature.icon} />
+                        </div>
+                        <div>
+                            <h1>{feature.header}</h1>
+                            <p>{feature.description}</p>
+                        </div>
+                    </div>
+                ))
+            }
         </section>
     );
 }
