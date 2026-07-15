@@ -18,7 +18,8 @@ import {
     faTruck,
     faShield,
     faArrowsRotate,
-    faHeadset
+    faHeadset,
+    faStar
 } 
 from "@fortawesome/free-solid-svg-icons";
 
@@ -43,5 +44,6 @@ export {
     faTruck,
     faShield,
     faArrowsRotate,
-    faHeadset
+    faHeadset,
+    faStar
 }
