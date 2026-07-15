@@ -19,6 +19,7 @@ import {
     faShield,
     faArrowsRotate,
     faHeadset,
+    faHeart,
     faStar as solidStar 
 } 
 from "@fortawesome/free-solid-svg-icons";
@@ -48,5 +49,6 @@ export {
     faArrowsRotate,
     faHeadset,
     solidStar,
-    regularStar
+    regularStar,
+    faHeart
 }
