@@ -5,6 +5,7 @@ import { discountedPrice } from "../../../utils/discountedPrice";
 import Rating from "../../../components/ui/Rating";
 import { faHeart } from "../../../utils/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const FeatureProducts = () => {
     const [show, setShow] = useState(false);
@@ -26,7 +27,8 @@ const FeatureProducts = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-5">
                     {
                         featuredProducts.map((product) => (
-                            <div className="shadow-md rounded-md">
+                            <Link to={`/products/${product.id}`} key={product.id} className="block">
+                             <div className="shadow-md rounded-md">
                                 <div className="bg-gray-100">
                                     <div>
                                         <div className="text-end p-2" onClick={() => setShow(prev => !prev)}>
@@ -50,6 +52,7 @@ const FeatureProducts = () => {
                                     </div>
                                 </div>
                             </div>
+                            </Link>
                         ))
                     }
                 </div>
