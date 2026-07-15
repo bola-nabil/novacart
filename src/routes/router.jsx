@@ -21,6 +21,7 @@ import Policy from "../pages/Policy/Policy";
 import Blog from "../pages/Blog/Blog";
 import Payment from "../pages/Payment/Payment";
 import CategoryProducts from "../pages/Category-Products/CategoryProducts";
+import ProductDetails from "../pages/Product/ProductDetails";
 
 const router = createBrowserRouter([
     {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
             {
                 "path": "/products/category/:slug",
                 "element": <CategoryProducts />
+            },
+            {
+                "path": "/products/:id",
+                "element": <ProductDetails />
             },
             {
                 "path": "/deals",
