@@ -19,9 +19,11 @@ import {
     faShield,
     faArrowsRotate,
     faHeadset,
-    faStar
+    faStar as solidStar 
 } 
 from "@fortawesome/free-solid-svg-icons";
+
+import { faStar as regularStar } from "@fortawesome/free-regular-svg-icons";
 
 import Logo from "../assets/images/logo.png";
 import FooterLogo from "../assets/images/footer-logo.png";
@@ -45,5 +47,6 @@ export {
     faShield,
     faArrowsRotate,
     faHeadset,
-    faStar
+    solidStar,
+    regularStar
 }
