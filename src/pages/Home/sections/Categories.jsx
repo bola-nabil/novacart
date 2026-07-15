@@ -10,25 +10,29 @@ const Categories = () => {
     if (error) return <p>Something went wrong.</p>;
 
     return (
-        <section>
+        <section className="py-10">
             <Container>
-                <div className="flex justify-between">
+                <div className="flex justify-between pb-5">
                     <h1 className="text-md sm:text-xl font-bold">Shop by Category</h1>
                     <Link to="/categories" className="text-blue-700">View All</Link>
                 </div>
 
-                <div>
+                <div className="flex justify-between">
                     {
-                        data.map((category) => (
-                            <div key={category.slug}>
-                                <h1>{category.name}</h1>
-                                <div>
+                        data.slice(0,5).map((category, index) => (
+                            <div key={category.slug} className={index >= 3 ? "hidden sm:block" : ""}>
+                                <div className="w-[100px] h-[100px] rounded-full bg-gray-100 flex items-center justify-center ">
                                     <Link to={`/products/category/${category.slug}`}>
-                                        <img src={categoryImages[category.slug]} alt={category.name}/>
+                                        <img
+                                         src={categoryImages[category.slug]}
+                                          alt={category.name}
+                                           className="object-contain w-[80px]"
+                                          />
                                     </Link>
                                 </div>
+                                <h1 className="font-bold text-center pt-2">{category.name}</h1>
                             </div>
-                        )).slice(0,5)
+                        ))
                     }
                 </div>
             </Container>
