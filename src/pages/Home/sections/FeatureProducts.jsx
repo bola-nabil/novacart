@@ -18,13 +18,12 @@ const FeatureProducts = () => {
     if(isLoading) return <p>Loading...</p>
     if (error) return <p>Something went wrong.</p>;
 
-    console.log("data", featuredProducts);
     return (
         <section className="py-10">
             <Container>
                 <h1 className="font-bold text-md sm:text-lg">Featured Products</h1>
 
-                <div className="flex justify-between pt-5">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-5">
                     {
                         featuredProducts.map((product) => (
                             <div className="shadow-md rounded-md">
@@ -45,9 +44,9 @@ const FeatureProducts = () => {
                                     <h1 className="font-bold">{product.title}</h1>
                                     <div className="py-3"><Rating rating={product.rating}/></div>
                                     <div className="flex justify-between">
-                                        <p className="font-bold">${product.price}</p>
-                                        <span className="line-through text-gray-400 font-bold">${discountedPrice(product.price, product.discountPercentage)}</span>
-                                        <span className="bg-red-100 text-red-700 font-bold text-sm p-1">-{product.discountPercentage}%</span>
+                                        <p className="font-bold text-[12px] lg:text-[16px]">${product.price}</p>
+                                        <span className="line-through text-gray-400 font-bold text-[12px] lg:text-[16px]">${discountedPrice(product.price, product.discountPercentage)}</span>
+                                        <span className="bg-red-100 text-red-700 font-bold text-[12px] p-1">-{product.discountPercentage}%</span>
                                     </div>
                                 </div>
                             </div>
