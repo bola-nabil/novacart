@@ -1,7 +1,10 @@
+import { useParams } from "react-router-dom";
+
 const CategoryProducts = () => {
+    const { slug } = useParams();
     return (
         <>
-            <h1>CategoryProducts</h1>
+            <h1>{slug}</h1>
         </>
     );
 }
