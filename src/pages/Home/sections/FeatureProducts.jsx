@@ -8,7 +8,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 const FeatureProducts = () => {
-    const [show, setShow] = useState(false);
+    const [favorites, setFavorites] = useState([]);
+
+    const handleFavoriteClick = (e, productId) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        setFavorites((prev) =>
+            prev.includes(productId)
+                ? prev.filter((id) => id !== productId)
+                : [...prev, productId]
+        );
+    };
 
     const { data, isLoading, error} = useProducts();
 
@@ -31,10 +42,20 @@ const FeatureProducts = () => {
                              <div className="shadow-md rounded-md">
                                 <div className="bg-gray-100">
                                     <div>
-                                        <div className="text-end p-2" onClick={() => setShow(prev => !prev)}>
+                                       <div
+                                            className="text-end p-2"
+                                            onClick={(e) =>
+                                                handleFavoriteClick(e, product.id)
+                                            }
+                                        >
                                             <FontAwesomeIcon
-                                             icon={faHeart}
-                                             className={`${show ? "text-red-700": "text-gray-500"} text-xl`}/>
+                                                icon={faHeart}
+                                                className={`${
+                                                    favorites.includes(product.id)
+                                                        ? "text-red-700"
+                                                        : "text-gray-500"
+                                                } text-xl`}
+                                            />
                                         </div>
                                         <img src={product.thumbnail} 
                                         alt={product.title}
