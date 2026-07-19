@@ -1,5 +1,6 @@
 import Container from "../../../components/ui/Container";
 import { useProducts } from "../../../hooks/useProducts";
+import ProductHeader from "../../../components/ui/ProductHeader";
 
 const BestSellers = () => {
     const { data, isLoading, error} = useProducts();
@@ -13,9 +14,11 @@ const BestSellers = () => {
 
     console.log(bestSellers);
     return (
-        <section>
+        <section className="py-10">
             <Container>
-
+                <div>
+                    <ProductHeader title="Best Sellers" path="/products" linkColor="indigo-700"/>
+                </div>
             </Container>
         </section>
     );
