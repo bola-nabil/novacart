@@ -1,6 +1,8 @@
 import { useProducts } from "../../../hooks/useProducts";
 import Container from "../../../components/ui/Container";
 import Timer from "../../../components/ui/Timer";
+import { discountedPrice } from "../../../utils/discountedPrice";
+import Rating from "../../../components/ui/Rating";
 import { Link } from "react-router-dom";
 import { faBolt } from "../../../utils/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -38,7 +40,34 @@ const FlashSale = () => {
                     <Timer endTime="2026-07-20T20:00:00"/>
                 </div>
 
-                <div>
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 pt-7">
+                    {
+                        flashSaleProducts.map((product) => (
+                            <Link key={product.id} to={`/products/${product.id}`}>
+                                <div>
+                                    <div className="bg-red-100">
+                                        <div className="text-end p-2">
+                                           <span
+                                                className="text-white bg-red-700 font-bold rounded-sm p-1 text-sm">
+                                                -{product.discountPercentage}%
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <img src={product.thumbnail} alt={product.title} />
+                                        </div>
+                                    </div>
+                                    <div className="shadow-md p-2">
+                                        <h1 className="font-bold">{product.title}</h1>
+                                        <div className="py-3 font-bold">
+                                            <span className="pr-4">${product.price}</span>
+                                            <span className="line-through text-gray-400">${discountedPrice(product.price, product.discountPercentage)}</span>
+                                        </div>
+                                        <Rating rating={product.rating}/>
+                                    </div>
+                                </div>
+                            </Link>
+                        ))
+                    }
                 </div>
             </Container>
         </section>
