@@ -17,9 +17,6 @@ const FlashSale = () => {
     if(isLoading) return <p>Loading....</p>
     if(error) return <p>Something went wrong</p>
 
-    console.log("Falsh Data:", flashSaleProducts);
-
-
     return (
         <section className="py-10">
             <Container>
