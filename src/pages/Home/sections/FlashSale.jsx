@@ -53,7 +53,7 @@ const FlashSale = () => {
                                             <img src={product.thumbnail} alt={product.title} />
                                         </div>
                                     </div>
-                                    <div className="shadow-md p-2">
+                                    <div className="shadow-md rounded-md p-2">
                                         <h1 className="font-bold">{product.title}</h1>
                                         <div className="py-3 font-bold">
                                             <span className="pr-4">${product.price}</span>
