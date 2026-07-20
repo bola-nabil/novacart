@@ -18,7 +18,7 @@ const BestSellers = () => {
         <section className="py-10">
             <Container>
                 <div>
-                    <ProductHeader title="Best Sellers" path="/products" linkColor="indigo-700"/>
+                    <ProductHeader title="Best Sellers" path="/products" linkColor="indigo"/>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 pt-7">
                         {
