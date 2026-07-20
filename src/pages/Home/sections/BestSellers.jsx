@@ -14,7 +14,6 @@ const BestSellers = () => {
     if(isLoading) return <p>Loading...</p>
     if(error) return <p>Something went wrong</p>
 
-    console.log(bestSellers);
     return (
         <section className="py-10">
             <Container>
