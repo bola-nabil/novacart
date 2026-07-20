@@ -5,6 +5,7 @@ import FeatureProducts from "./sections/FeatureProducts";
 import PromoBanner from "./sections/PromoBanner";
 import FlashSale from "./sections/FlashSale";
 import BestSellers from "./sections/BestSellers";
+import NewArrivals from "./sections/NewArrivals";
 import "./home.css";
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             <PromoBanner />
             <FlashSale />
             <BestSellers />
+            <NewArrivals />
         </div>
     );
 }
