@@ -1,5 +1,6 @@
 import Container from "../../../components/ui/Container";
 import { useProducts } from "../../../hooks/useProducts";
+import ProductHeader from "../../../components/ui/ProductHeader";
 
 const NewArrivals = () => {
     const { data, isLoading, error} = useProducts();
@@ -10,9 +11,11 @@ const NewArrivals = () => {
 
     console.log("new arrivals data:", data);
     return (
-        <section>
+        <section className="py-10">
             <Container>
-                <h1>New Arrivals</h1>
+                <div>
+                    <ProductHeader title="New Arrivals" path="/products" linkColor="green" />
+                </div>
             </Container>
         </section>
     );
