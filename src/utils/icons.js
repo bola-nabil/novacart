@@ -21,7 +21,8 @@ import {
     faHeadset,
     faHeart,
     faStar as solidStar,
-    faBolt
+    faBolt,
+    faCheck
 } 
 from "@fortawesome/free-solid-svg-icons";
 
@@ -52,5 +53,6 @@ export {
     solidStar,
     regularStar,
     faHeart,
-    faBolt
+    faBolt,
+    faCheck
 }
