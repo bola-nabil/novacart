@@ -7,6 +7,7 @@ import FlashSale from "./sections/FlashSale";
 import BestSellers from "./sections/BestSellers";
 import NewArrivals from "./sections/NewArrivals";
 import Brands from "./sections/Brands";
+import Testimonials from "./sections/Testimonials";
 import "./home.css";
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
             <BestSellers />
             <NewArrivals />
             <Brands />
+            <Testimonials />
         </div>
     );
 }
