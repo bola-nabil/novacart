@@ -8,6 +8,7 @@ import BestSellers from "./sections/BestSellers";
 import NewArrivals from "./sections/NewArrivals";
 import Brands from "./sections/Brands";
 import Testimonials from "./sections/Testimonials";
+import Newsletter from "./sections/Newsletter";
 import "./home.css";
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
             <NewArrivals />
             <Brands />
             <Testimonials />
+            <Newsletter />
         </div>
     );
 }
